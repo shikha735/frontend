@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Skill Assessment Tool :: Role matrix</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Skill Assessment Tool</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content" height="100%">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+
+    <div class="col-sm-8 text-left"> 
+      <h1>Role Matrix :: Enter Score</h1><br>
+      <form>
+      	<div class="form-group">
+      		<div class="col-sm-4">
+      			<label for="team-name">Team name: </label>
+      		</div>
+      		<div class="col-sm-6">
+      			<input type="text" class="form-control" id="team-name" placeholder="Enter team name">
+      		</div>
+          <div class="col-sm-2">
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 5%">Submit</button>
+          </div>
+      	</div> <br>
+      </form>	
+      <hr>
+
+      <form class="form-inline">
+
+        <div class="col-sm-4">
+          <label for="type-role">Select Role:</label>
+        </div>
+        <div class="col-sm-6">
+          <select class="form-control" id="type-role">
+            <option>Developer</option>
+            <option>Business Analyst</option>
+            <option>QA</option>
+            <option>Team member</option>
+          </select>
+        </div> 
+        <div class="col-sm-2">
+          <button type="submit" class="btn btn-primary" style="margin-bottom: 5%">Submit scores</button>
+        </div>
+        <br>
+      </form> 
+        
+        <br>
+      	<div class="panel-group" id="accordion">
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Technical Skills</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+
+                <div class="table-responsive-vertical shadow-z-1">  
+                  <!-- Table starts here -->
+                    <table id="table" class="table table-hover table-mc-light-blue">
+                    <tbody>
+                        <tr>
+                          <th data-title="id">ID
+                          </th>
+                          <th data-title="skill">Skills
+                          </th>
+                          <th data-title="score">Score</th>
+                        </tr>
+                        <tr>
+                          <td data-title="id">1
+                          </td>
+                          <td data-title="skill">Progress
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">2
+                          </td>
+                          <td data-title="skill">Open edge
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">3
+                          </td>
+                          <td data-title="skill">Java
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Firm Tools</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                
+                <div class="table-responsive-vertical shadow-z-1">
+                  <!-- Table starts here -->
+                    <table id="table" class="table table-hover table-mc-light-blue">
+                    <tbody>
+                        <tr>
+                          <th data-title="id">ID
+                          </th>
+                          <th data-title="skill">Skills
+                          </th>
+                          <th data-title="score">Score</th>
+                        </tr>
+                        <tr>
+                          <td data-title="id">1
+                          </td>
+                          <td data-title="skill">Progress
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">2
+                          </td>
+                          <td data-title="skill">Open edge
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">3
+                          </td>
+                          <td data-title="skill">Java
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+          </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Application Knowledge</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                
+                <div class="table-responsive-vertical shadow-z-1">
+                  <!-- Table starts here -->
+                    <table id="table" class="table table-hover table-mc-light-blue">
+                    <tbody>
+                        <tr>
+                          <th data-title="id">ID
+                          </th>
+                          <th data-title="skill">Skills
+                          </th>
+                          <th data-title="score">Score</th>
+                        </tr>
+                        <tr>
+                          <td data-title="id">1
+                          </td>
+                          <td data-title="skill">Progress
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">2
+                          </td>
+                          <td data-title="skill">Open edge
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">3
+                          </td>
+                          <td data-title="skill">Java
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Methodologies</a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="table-responsive-vertical shadow-z-1">
+                  <!-- Table starts here -->
+                    <table id="table" class="table table-hover table-mc-light-blue">
+                    <tbody>
+                        <tr>
+                          <th data-title="id">ID
+                          </th>
+                          <th data-title="skill">Skills
+                          </th>
+                          <th data-title="score">Score</th>
+                        </tr>
+                        <tr>
+                          <td data-title="id">1
+                          </td>
+                          <td data-title="skill">Progress
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">2
+                          </td>
+                          <td data-title="skill">Open edge
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">3
+                          </td>
+                          <td data-title="skill">Java
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">QA specific skills </a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="table-responsive-vertical shadow-z-1">
+                  <!-- Table starts here -->
+                    <table id="table" class="table table-hover table-mc-light-blue">
+                    <tbody>
+                        <tr>
+                          <th data-title="id">ID
+                          </th>
+                          <th data-title="skill">Skills
+                          </th>
+                          <th data-title="score">Score</th>
+                        </tr>
+                        <tr>
+                          <td data-title="id">1
+                          </td>
+                          <td data-title="skill">Progress
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">2
+                          </td>
+                          <td data-title="skill">Open edge
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">3
+                          </td>
+                          <td data-title="skill">Java
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">BA specific skills</a>
+              </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="table-responsive-vertical shadow-z-1">
+                  <!-- Table starts here -->
+                    <table id="table" class="table table-hover table-mc-light-blue">
+                    <tbody>
+                        <tr>
+                          <th data-title="id">ID
+                          </th>
+                          <th data-title="skill">Skills
+                          </th>
+                          <th data-title="score">Score</th>
+                        </tr>
+                        <tr>
+                          <td data-title="id">1
+                          </td>
+                          <td data-title="skill">Progress
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">2
+                          </td>
+                          <td data-title="skill">Open edge
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="id">3
+                          </td>
+                          <td data-title="skill">Java
+                          </td>
+                          <td data-title="score">
+                            <select class="form-control" id="type-role">
+                              <option value="1">1.Basic knowledge</option>
+                              <option value="2">2.Can operate with little support</option>
+                              <option value="3">3.Can function with no help</option>
+                              <option value="4">4.Practically strong</option>
+                              <option value="5">5.Expert across the LOB</option>
+                            </select>
+                          </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer" id="social">
+	<div class="container text-center">
+		Skill assessment tool | MX
+	</div>
+</div>
+
+</body>
+</html>
